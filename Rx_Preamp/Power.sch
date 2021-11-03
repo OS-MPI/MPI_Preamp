@@ -1,0 +1,434 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev "2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack_Switch J5
+U 1 1 6031407E
+P 2100 1750
+F 0 "J5" H 2157 2067 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 2157 1976 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2150 1710 50  0001 C CNN
+F 3 "~" H 2150 1710 50  0001 C CNN
+	1    2100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J6
+U 1 1 60314776
+P 2100 2300
+F 0 "J6" H 2157 2617 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 2157 2526 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2150 2260 50  0001 C CNN
+F 3 "~" H 2150 2260 50  0001 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1000 2900 1000
+Wire Wire Line
+	2400 1650 2900 1650
+Wire Wire Line
+	2900 1650 2900 1000
+$Comp
+L power:GND #PWR0155
+U 1 1 60316CF0
+P 3350 2300
+F 0 "#PWR0155" H 3350 2050 50  0001 C CNN
+F 1 "GND" H 3355 2127 50  0000 C CNN
+F 2 "" H 3350 2300 50  0001 C CNN
+F 3 "" H 3350 2300 50  0001 C CNN
+	1    3350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2400 2550 2400
+Wire Wire Line
+	2400 2300 2550 2300
+Wire Wire Line
+	2550 2300 2550 2400
+Wire Wire Line
+	2400 1750 3350 1750
+Wire Wire Line
+	3350 1750 3350 1850
+Wire Wire Line
+	2400 1850 3350 1850
+Connection ~ 3350 1850
+Wire Wire Line
+	3350 1850 3350 2200
+Wire Wire Line
+	2400 2200 3350 2200
+Connection ~ 3350 2200
+Wire Wire Line
+	3350 2200 3350 2300
+Wire Wire Line
+	2350 1100 3350 1100
+Wire Wire Line
+	3350 1100 3350 1700
+Connection ~ 3350 1750
+Wire Wire Line
+	2350 1200 2550 1200
+Wire Wire Line
+	2550 1200 2550 2300
+Connection ~ 2550 2300
+$Comp
+L Device:D D3
+U 1 1 6031985D
+P 4300 1000
+F 0 "D3" H 4300 783 50  0000 C CNN
+F 1 "D" H 4300 874 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 4300 1000 50  0001 C CNN
+F 3 "~" H 4300 1000 50  0001 C CNN
+	1    4300 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 2500 2550 2400
+Connection ~ 2550 2400
+Wire Wire Line
+	4150 1000 3800 1000
+Connection ~ 2900 1000
+$Comp
+L Device:LED D1
+U 1 1 6031C483
+P 3800 1150
+F 0 "D1" V 3747 1230 50  0000 L CNN
+F 1 "WHITE" V 3838 1230 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 3800 1150 50  0001 C CNN
+F 3 "~" H 3800 1150 50  0001 C CNN
+	1    3800 1150
+	0    1    1    0   
+$EndComp
+Connection ~ 3800 1000
+Wire Wire Line
+	3800 1000 2900 1000
+$Comp
+L Device:R R23
+U 1 1 6031CB79
+P 3800 1550
+F 0 "R23" H 3870 1596 50  0000 L CNN
+F 1 "470" H 3870 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 1550 50  0001 C CNN
+F 3 "~" H 3800 1550 50  0001 C CNN
+	1    3800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 6031CC5C
+P 3800 1900
+F 0 "R24" H 3870 1946 50  0000 L CNN
+F 1 "470" H 3870 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 1900 50  0001 C CNN
+F 3 "~" H 3800 1900 50  0001 C CNN
+	1    3800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 6031A562
+P 4350 2500
+F 0 "D4" H 4350 2717 50  0000 C CNN
+F 1 "D" H 4350 2626 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 4350 2500 50  0001 C CNN
+F 3 "~" H 4350 2500 50  0001 C CNN
+	1    4350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2500 3800 2500
+$Comp
+L Device:LED D2
+U 1 1 6031DA01
+P 3800 2300
+F 0 "D2" V 3747 2380 50  0000 L CNN
+F 1 "WHITE" V 3838 2380 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 3800 2300 50  0001 C CNN
+F 3 "~" H 3800 2300 50  0001 C CNN
+	1    3800 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 2500 3800 2450
+Connection ~ 3800 2500
+Wire Wire Line
+	3800 2500 4200 2500
+Wire Wire Line
+	3800 2150 3800 2050
+Wire Wire Line
+	3800 1750 3800 1700
+Wire Wire Line
+	3800 1400 3800 1300
+Wire Wire Line
+	3800 1700 3350 1700
+Connection ~ 3800 1700
+Connection ~ 3350 1700
+Wire Wire Line
+	3350 1700 3350 1750
+Wire Wire Line
+	4450 1000 4500 1000
+Wire Wire Line
+	4500 2500 4750 2500
+$Comp
+L power:-10V #PWR0156
+U 1 1 6031FA1C
+P 4750 2500
+F 0 "#PWR0156" H 4750 2600 50  0001 C CNN
+F 1 "-10V" H 4765 2673 50  0000 C CNN
+F 2 "" H 4750 2500 50  0001 C CNN
+F 3 "" H 4750 2500 50  0001 C CNN
+	1    4750 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+10V #PWR0157
+U 1 1 6031FE6E
+P 4750 1000
+F 0 "#PWR0157" H 4750 850 50  0001 C CNN
+F 1 "+10V" H 4765 1173 50  0000 C CNN
+F 2 "" H 4750 1000 50  0001 C CNN
+F 3 "" H 4750 1000 50  0001 C CNN
+	1    4750 1000
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3500 900  3500 2750
+Wire Notes Line
+	3500 2750 4050 2750
+Wire Notes Line
+	4050 2750 4050 900 
+Wire Notes Line
+	4050 900  3500 900 
+Text Notes 3300 2850 0    50   ~ 0
+Reverse voltage indication
+$Comp
+L Device:LED D5
+U 1 1 6032149E
+P 4500 1200
+F 0 "D5" V 4539 1082 50  0000 R CNN
+F 1 "RED" V 4448 1082 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 4500 1200 50  0001 C CNN
+F 3 "~" H 4500 1200 50  0001 C CNN
+	1    4500 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 603219A1
+P 4500 1550
+F 0 "R25" H 4570 1596 50  0000 L CNN
+F 1 "470" H 4570 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4430 1550 50  0001 C CNN
+F 3 "~" H 4500 1550 50  0001 C CNN
+	1    4500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 60321D33
+P 4500 2300
+F 0 "D6" V 4539 2182 50  0000 R CNN
+F 1 "BLUE" V 4448 2182 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 4500 2300 50  0001 C CNN
+F 3 "~" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 6032241A
+P 4500 1900
+F 0 "R26" H 4570 1946 50  0000 L CNN
+F 1 "470" H 4570 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4430 1900 50  0001 C CNN
+F 3 "~" H 4500 1900 50  0001 C CNN
+	1    4500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1700 4500 1750
+Wire Wire Line
+	4500 1000 4500 1050
+Connection ~ 4500 1000
+Wire Wire Line
+	4500 1000 4750 1000
+Wire Wire Line
+	4500 1350 4500 1400
+Wire Wire Line
+	4500 2050 4500 2150
+Wire Wire Line
+	4500 2450 4500 2500
+Connection ~ 4500 2500
+Wire Wire Line
+	4500 1700 4200 1700
+Wire Wire Line
+	4200 1700 4200 1850
+Connection ~ 4500 1700
+$Comp
+L power:GND #PWR0158
+U 1 1 603248A5
+P 4200 1850
+F 0 "#PWR0158" H 4200 1600 50  0001 C CNN
+F 1 "GND" H 4205 1677 50  0000 C CNN
+F 2 "" H 4200 1850 50  0001 C CNN
+F 3 "" H 4200 1850 50  0001 C CNN
+	1    4200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Rx_Preamp-rescue:ScrewTerminal01x03-TB009-508-03BE J7
+U 1 1 6035E81A
+P 1950 1100
+F 0 "J7" H 1843 733 50  0000 C CNN
+F 1 "ScrewTerminal01x03" H 1843 824 50  0000 C CNN
+F 2 "Martinos:CUI_TB009-508-03BE" H 1950 1100 50  0001 L BNN
+F 3 "" H 1950 1100 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 1950 1100 50  0001 L BNN "STANDARD"
+F 5 "CUI" H 1950 1100 50  0001 L BNN "MANUFACTURER"
+	1    1950 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U5
+U 1 1 60ACEA8D
+P 5750 1000
+F 0 "U5" H 5750 1242 50  0000 C CNN
+F 1 "L7805" H 5750 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5775 850 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5750 950 50  0001 C CNN
+	1    5750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7905 U6
+U 1 1 60ACF95C
+P 5750 2500
+F 0 "U6" H 5750 2351 50  0000 C CNN
+F 1 "L7905" H 5750 2260 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5750 2300 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/86/41/c7/2b/45/f2/CD00000450.pdf/files/CD00000450.pdf/jcr:content/translations/en.CD00000450.pdf" H 5750 2500 50  0001 C CNN
+	1    5750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C44
+U 1 1 60B05F35
+P 5000 2300
+F 0 "C44" H 5118 2346 50  0000 L CNN
+F 1 "22u" H 5118 2255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5038 2150 50  0001 C CNN
+F 3 "~" H 5000 2300 50  0001 C CNN
+	1    5000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C43
+U 1 1 60B06468
+P 5000 1200
+F 0 "C43" H 4882 1154 50  0000 R CNN
+F 1 "22u" H 4882 1245 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5038 1050 50  0001 C CNN
+F 3 "~" H 5000 1200 50  0001 C CNN
+	1    5000 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 1000 5000 1000
+Connection ~ 4750 1000
+Wire Wire Line
+	5000 1000 5000 1050
+Connection ~ 5000 1000
+Wire Wire Line
+	5000 1000 5450 1000
+Wire Wire Line
+	5000 1350 5000 1700
+Wire Wire Line
+	5000 1700 4500 1700
+Wire Wire Line
+	5000 1700 5000 2150
+Connection ~ 5000 1700
+Wire Wire Line
+	4750 2500 5000 2500
+Connection ~ 4750 2500
+Wire Wire Line
+	5000 2450 5000 2500
+Connection ~ 5000 2500
+Wire Wire Line
+	5000 2500 5450 2500
+Wire Wire Line
+	5000 1700 5750 1700
+Connection ~ 5750 1700
+Wire Wire Line
+	5750 1700 5750 2200
+Wire Wire Line
+	5750 1300 5750 1700
+Wire Wire Line
+	6850 1000 6850 900 
+$Comp
+L power:-5V #PWR0138
+U 1 1 60B0DB50
+P 6850 2250
+F 0 "#PWR0138" H 6850 2350 50  0001 C CNN
+F 1 "-5V" H 6865 2423 50  0000 C CNN
+F 2 "" H 6850 2250 50  0001 C CNN
+F 3 "" H 6850 2250 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2500 6850 2250
+$Comp
+L power:+5V #PWR0139
+U 1 1 60B0EBC5
+P 6850 900
+F 0 "#PWR0139" H 6850 750 50  0001 C CNN
+F 1 "+5V" H 6865 1073 50  0000 C CNN
+F 2 "" H 6850 900 50  0001 C CNN
+F 3 "" H 6850 900 50  0001 C CNN
+	1    6850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2500 6850 2500
+$Comp
+L Device:Polyfuse F2
+U 1 1 60C30746
+P 6400 2500
+F 0 "F2" V 6175 2500 50  0000 C CNN
+F 1 "Polyfuse" V 6266 2500 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6450 2300 50  0001 L CNN
+F 3 "~" H 6400 2500 50  0001 C CNN
+	1    6400 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1000 6050 1000
+Wire Wire Line
+	6450 1000 6850 1000
+Wire Wire Line
+	6250 2500 6050 2500
+$Comp
+L Device:Polyfuse F1
+U 1 1 60C36770
+P 6300 1000
+F 0 "F1" V 6075 1000 50  0000 C CNN
+F 1 "Polyfuse" V 6166 1000 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6350 800 50  0001 L CNN
+F 3 "~" H 6300 1000 50  0001 C CNN
+	1    6300 1000
+	0    1    1    0   
+$EndComp
+Text Notes 4700 750  0    50   ~ 0
+Not necessarily 10V\n15-7V is fine
+$EndSCHEMATC

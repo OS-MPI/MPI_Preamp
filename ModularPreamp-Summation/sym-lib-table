@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ModularPreamp-rescue)(type Legacy)(uri ${KIPRJMOD}/ModularPreamp-rescue.lib)(options "")(descr ""))
+  (lib (name ModularPreamp-Summation-rescue)(type Legacy)(uri ${KIPRJMOD}/ModularPreamp-Summation-rescue.lib)(options "")(descr ""))
+)

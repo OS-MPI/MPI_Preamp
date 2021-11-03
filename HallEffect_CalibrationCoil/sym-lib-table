@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name HallEffect_CalibrationCoil-rescue)(type Legacy)(uri ${KIPRJMOD}/HallEffect_CalibrationCoil-rescue.lib)(options "")(descr ""))
+)
