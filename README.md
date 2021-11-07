@@ -19,3 +19,17 @@ This is a module that would replace the summation section of the circuit. It add
 
 ## "Rx_Preamp"
 This is an earlier version of the preamp with the front-end being a simple (high quality) INA. There is room for an input notch filter on the board, which is desireable in some cases.  This board does not have a transformer built-in but rather has a single-ended to differential converstion stage, so the output is still differential. 
+
+---
+# Measured Noise vs Simulated
+--- 
+<img src=PreampNoise.png>
+<img src=PreampNoise_Zoom.png>
+With each of the preamps, the noise was measured on the bench, and the figure above shows the resulting data. There are a few frequencies where there was clearly interference issues, but that is expected in an unshielded environment.
+
+## Modular preamp
+I would expect to see the noise be sqrt(N) times less than the datasheet suggests for a single one (3.1nV/sqrt(Hz)). This is 1.55nV/sqrt(Hz) for N=4, and for N=12 it is 0.89nV/sqrt(Hz). I measured ~1.6 and ~0.9 nV/sqrt(Hz) respectively. These were measured with terminated inputs, so current noise has no contribution. 
+
+## INA
+
+This was terminated with 50 ohms, so the input noise I expect is the input noise on the ADA8429 summed with the thermal noise of 50 ohms(->0.9nV/sqrt(Hz)). Well, more accurately it is the sqrt of the sum of the noise squared. The INA's gain is set by a resistor (30 Ohms->0.7nV/sqrt(Hz)), which contributes noise as well, so I would expect the noise to be about: sqrt(0.9^2+0.7^2+1^2) = 1.5nV/sqrt(Hz), which is pretty close to what is measured. It suggests lowering the gain resistor (increase gain) would be beneficial. 
