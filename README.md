@@ -19,6 +19,10 @@ This is a module that would replace the summation section of the circuit. It add
 
 ## "Rx_Preamp"
 This is an earlier version of the preamp with the front-end being a simple (high quality) INA. There is room for an input notch filter on the board, which is desireable in some cases.  This board does not have a transformer built-in but rather has a single-ended to differential converstion stage, so the output is still differential. 
+## "SMD_Filter"
+
+This is a simple board that allows for a notch filter to be make from SMD parts (and leaded inductors). It can be used between an MPI Rx coil to notch the fundamental, although due to the small size, the inductors may not be operating fully linearly. One solution may be to use an air-core inductor for the first resonant tank in the filter, and ferrites past that. This air-core (highly linear) will block most of the energy at the drive frequency preventing the following inductors from having much voltage across them. Make sure you use C0G/NP0 capacitors. 
+The areas on the board with solder-mask removed is to allow for a shield to be soldered/pressed onto the surface preventing cross-talk.
 
 ---
 # Measured Noise vs Simulated
@@ -33,3 +37,4 @@ I would expect to see the noise be sqrt(N) times less than the datasheet suggest
 ## INA
 
 This was terminated with 50 ohms, so the input noise I expect is the input noise on the ADA8429 summed with the thermal noise of 50 ohms(->0.9nV/sqrt(Hz)). Well, more accurately it is the sqrt of the sum of the noise squared. The INA's gain is set by a resistor (30 Ohms->0.7nV/sqrt(Hz)), which contributes noise as well, so I would expect the noise to be about: sqrt(0.9^2+0.7^2+1^2) = 1.5nV/sqrt(Hz), which is pretty close to what is measured. It suggests lowering the gain resistor (increase gain) would be beneficial. 
+
