@@ -391,7 +391,7 @@
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
       "label_size_ratio": 0.25,
-      "pin_symbol_size": 0.0,
+      "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.08
     },
     "legacy_lib_dir": "",

@@ -39,16 +39,22 @@
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.85,
+        "silk_text_size_v": 0.85,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": true,
-          "min_clearance": 0.25
+          "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -115,11 +121,16 @@
       },
       "track_widths": [
         0.0,
+        0.25,
         0.5,
-        1.0,
-        2.0
+        1.0
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -339,7 +350,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Rx_Preamp.kicad_pro",
+    "filename": "ModularPreamp.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -418,16 +429,20 @@
   },
   "sheets": [
     [
-      "275aa44a-b61f-489f-9e2a-819a0fe0d1eb",
+      "5783d6d2-bd58-4783-963e-956e4cc9b41f",
       ""
     ],
     [
-      "00000000-0000-0000-0000-00006076b837",
-      "Power"
+      "00000000-0000-0000-0000-0000610b310b",
+      "Sheet610B310A"
     ],
     [
-      "00000000-0000-0000-0000-0000603bc0d2",
-      "RxFilter"
+      "00000000-0000-0000-0000-000060fa0cc0",
+      "Sheet60FA0CBF"
+    ],
+    [
+      "00000000-0000-0000-0000-000061223848",
+      "AAFilt-SE-to-Diff"
     ]
   ],
   "text_variables": {}

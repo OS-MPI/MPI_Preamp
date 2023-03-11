@@ -1,0 +1,12 @@
+### Module positions - created on Mon Feb 20 13:35:18 2023 ###
+### Printed by Pcbnew version (6.0.10)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val               Package                 PosX       PosY       Rot  Side
+C50       100p              C_0805_2012Metric  -117.6500  -102.3000  180.0000  bottom
+C51       100p              C_0805_2012Metric  -124.7000   -94.4500   90.0000  bottom
+C52       100p              C_0805_2012Metric  -120.9000   -91.5000   90.0000  bottom
+C53       100p              C_0805_2012Metric  -120.9500   -96.1500  -90.0000  bottom
+U7        CenterPosGraphic  CenterPos          -114.2500   -31.5000    0.0000  bottom
+U8        CenterPosGraphic  CenterPos          -114.2500   -37.0000    0.0000  bottom
+## End
